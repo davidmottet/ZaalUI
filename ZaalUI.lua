@@ -1,47 +1,74 @@
 --Hides stuff
-StatusTrackingBarManager:Hide();
 
-MainMenuBarArtFrame.RightEndCap:Hide();
-
-MainMenuBarArtFrame.LeftEndCap:Hide();
-
---UIErrorsFrame:Hide() 
---MicroButtonAndBagsBar:Hide() 
---StanceButton1:SetAlpha(0)
---QuickJoinToastButton:Hide()
---ChatFrameChannelButton:Hide()
+StatusTrackingBarManager:Hide();
 
 
---Removes gap
-MainMenuBarArtFrameBackground:ClearAllPoints() 
-
-MainMenuBarArtFrameBackground:SetPoint("CENTER",0,-23) MainMenuBarArtFrameBackground.SetPoint = function() end
+MainMenuBarArtFrame.RightEndCap:Hide();
 
 
---Player/target/focus adjust
-PlayerFrame:ClearAllPoints() 
-
-PlayerFrame:SetPoint("TOPLEFT",150,-140) PlayerFrame.SetPoint = function() end
-
-TargetFrame:ClearAllPoints() 
-
-TargetFrame:SetPoint("TOPLEFT",450,-140) TargetFrame.SetPoint = function() end
-
-FocusFrame:ClearAllPoints() 
-
-FocusFrame:SetPoint("TOPLEFT",187,-330) FocusFrame.SetPoint = function() end
+MainMenuBarArtFrame.LeftEndCap:Hide();
 
 
---Adds button to right of Bottombar
-MultiBarLeftButton12:ClearAllPoints()
-MultiBarLeftButton12:SetPoint("LEFT", MultiBarBottomLeftButton12, "RIGHT", 6, 0) MultiBarLeftButton12.SetPoint = function() end
+--UIErrorsFrame:Hide() 
+
+--MicroButtonAndBagsBar:Hide() 
+
+--StanceButton1:SetAlpha(0)
+
+--QuickJoinToastButton:Hide()
+
+--ChatFrameChannelButton:Hide()
 
 
---Sets variables
-SetCVar("UIScale", 0.1)
-SetCVar("alwaysShowActionBars", 0)
-SetCVar("showHonorAsExperience", 1)
 
---Last on raid frames
-LoadAddOn("Blizzard_CompactRaidFrames") CRFSort_Group=function(t1, t2) if UnitIsUnit(t1,"player") then return false elseif UnitIsUnit(t2,"player") then return true else return t1 < t2 end end CompactRaidFrameContainer.flowSortFunc=CRFSort_Group
-
+--Removes gap
+
+MainMenuBarArtFrameBackground:ClearAllPoints() 
+
+
+MainMenuBarArtFrameBackground:SetPoint("CENTER",0,-23) MainMenuBarArtFrameBackground.SetPoint = function() end
+
+
+
+--Player/target/focus adjust
+
+PlayerFrame:ClearAllPoints() 
+
+
+PlayerFrame:SetPoint("TOPLEFT",350,-340) PlayerFrame.SetPoint = function() end
+
+
+TargetFrame:ClearAllPoints() 
+
+
+TargetFrame:SetPoint("TOPLEFT",650,-340) TargetFrame.SetPoint = function() end
+
+
+FocusFrame:ClearAllPoints() 
+
+
+/run FocusFrame:SetPoint("TOPLEFT",487,-530) FocusFrame.SetPoint = function() end
+
+
+
+--Adds button to right of Bottombar
+
+MultiBarLeftButton12:ClearAllPoints()
+
+MultiBarLeftButton12:SetPoint("LEFT", MultiBarBottomLeftButton12, "RIGHT", 6, 0) MultiBarLeftButton12.SetPoint = function() end
+
+
+
+--Sets variables
+
+SetCVar("UIScale", 0.1)
+
+SetCVar("alwaysShowActionBars", 0)
+
+SetCVar("showHonorAsExperience", 1)
+
+
+--Last on raid frames
+
+LoadAddOn("Blizzard_CompactRaidFrames") CRFSort_Group=function(t1, t2) if UnitIsUnit(t1,"player") then return false elseif UnitIsUnit(t2,"player") then return true else return t1 < t2 end end CompactRaidFrameContainer.flowSortFunc=CRFSort_Group
+
