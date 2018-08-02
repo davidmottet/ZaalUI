@@ -47,7 +47,7 @@ TargetFrame:SetPoint("TOPLEFT",650,-340) TargetFrame.SetPoint = function() end
 FocusFrame:ClearAllPoints() 
 
 
-/run FocusFrame:SetPoint("TOPLEFT",487,-530) FocusFrame.SetPoint = function() end
+FocusFrame:SetPoint("TOPLEFT",487,-530) FocusFrame.SetPoint = function() end
 
 
 
@@ -61,11 +61,11 @@ FocusFrame:ClearAllPoints()
 
 --Sets variables
 
-SetCVar("UIScale", 0.1)
+--SetCVar("UIScale", 0.1)
 
-SetCVar("alwaysShowActionBars", 0)
+--SetCVar("alwaysShowActionBars", 0)
 
-SetCVar("showHonorAsExperience", 1)
+--SetCVar("showHonorAsExperience", 1)
 
 
 --Last on raid frames
