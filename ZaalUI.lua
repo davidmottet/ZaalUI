@@ -47,7 +47,7 @@ TargetFrame:SetPoint("TOPLEFT",650,-340) TargetFrame.SetPoint = function() end
 FocusFrame:ClearAllPoints() 
 
 
-FocusFrame:SetPoint("TOPLEFT",487,-530) FocusFrame.SetPoint = function() end
+FocusFrame:SetPoint("TOPLEFT",387,-530) FocusFrame.SetPoint = function() end
 
 
 
