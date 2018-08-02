@@ -1,12 +1,12 @@
 --Hides stuff
 
-StatusTrackingBarManager:Hide();
+--StatusTrackingBarManager:Hide();
 
 
-MainMenuBarArtFrame.RightEndCap:Hide();
+--MainMenuBarArtFrame.RightEndCap:Hide();
 
 
-MainMenuBarArtFrame.LeftEndCap:Hide();
+--MainMenuBarArtFrame.LeftEndCap:Hide();
 
 
 --UIErrorsFrame:Hide() 
@@ -23,10 +23,10 @@ MainMenuBarArtFrame.LeftEndCap:Hide();
 
 --Removes gap
 
-MainMenuBarArtFrameBackground:ClearAllPoints() 
+--MainMenuBarArtFrameBackground:ClearAllPoints() 
 
 
-MainMenuBarArtFrameBackground:SetPoint("CENTER",0,-23) MainMenuBarArtFrameBackground.SetPoint = function() end
+--MainMenuBarArtFrameBackground:SetPoint("CENTER",0,-23) MainMenuBarArtFrameBackground.SetPoint = function() end
 
 
 
@@ -53,9 +53,9 @@ FocusFrame:ClearAllPoints()
 
 --Adds button to right of Bottombar
 
-MultiBarLeftButton12:ClearAllPoints()
+--MultiBarLeftButton12:ClearAllPoints()
 
-MultiBarLeftButton12:SetPoint("LEFT", MultiBarBottomLeftButton12, "RIGHT", 6, 0) MultiBarLeftButton12.SetPoint = function() end
+--MultiBarLeftButton12:SetPoint("LEFT", MultiBarBottomLeftButton12, "RIGHT", 6, 0) MultiBarLeftButton12.SetPoint = function() end
 
 
 
