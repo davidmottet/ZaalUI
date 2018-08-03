@@ -32,10 +32,15 @@
 
 --Player/target/focus adjust
 
-PlayerFrame:ClearAllPoints() 
+
+--Display personal
+
+PlayerFrame:Hide();
+
+--PlayerFrame:ClearAllPoints() 
 
 
-PlayerFrame:SetPoint("TOPLEFT",350,-340) PlayerFrame.SetPoint = function() end
+--PlayerFrame:SetPoint("TOPLEFT",350,-340) PlayerFrame.SetPoint = function() end
 
 
 TargetFrame:ClearAllPoints() 
