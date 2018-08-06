@@ -3,3 +3,4 @@
 ## Notes: Runs various scripts when you log in.
 
 ZaalUI.lua
+embeds.xml
