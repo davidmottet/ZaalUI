@@ -1,10 +1,14 @@
 local function CommunMode()
 	--Hides stuff
 	MicroButtonAndBagsBar:Hide()
-	PlayerFrame:SetAlpha(0)
 end
 local function FramePosition()
 	--Player/target/focus adjust
+	PlayerFrame:ClearAllPoints()
+	PlayerFrame:SetPoint("TOPLEFT",GetScreenWidth()/5,-GetScreenHeight()/5)
+	PlayerFrame.SetPoint = function() end
+	PlayerFrame:SetUserPlaced(true)
+
 	TargetFrame:ClearAllPoints()
 	TargetFrame:SetPoint("TOPLEFT",GetScreenWidth()/5,-GetScreenHeight()/5)
 	TargetFrame.SetPoint = function() end
